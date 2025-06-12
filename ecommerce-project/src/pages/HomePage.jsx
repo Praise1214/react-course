@@ -1,11 +1,12 @@
 import {Header} from '../components/Header'
 
-import './homepage.css'
+import './Homepage.css'
 
 export function Homepage() {
     return (
 			<>
-
+				<link rel="icon" type="image/svg+xml" to="home-favicon.png" />
+				
 				<title>Ecommerce Project</title>
 				
 				<Header />
