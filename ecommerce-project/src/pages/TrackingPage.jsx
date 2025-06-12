@@ -9,7 +9,7 @@ import CartIcon from '../assets/images/icons/cart-icon.png'
 export function TrackingPage() {
 	return (
 		<>
-			<link rel="icon" type="image/svg+xml" to="tracking-favicon.png" />
+			<link rel="icon" type="image/svg+xml" href="tracking-favicon.png" />
 
 			<title>Tracking Page</title>
 
