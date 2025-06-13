@@ -8,29 +8,29 @@
     padding: 2rem;
     background-color: #f4f4f4;
     color: #333;
-  }
-  
-  .error-code {
-    font-size: 6rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .error-message {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
-  
-  .back-home-link {
-    padding: 0.75rem 1.5rem;
-    background-color: #0073e6;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-  }
-  
-  .back-home-link:hover {
-    background-color: #005bb5;
-  }
+}
+
+.error-code {
+font-size: 6rem;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+.error-message {
+font-size: 1.25rem;
+margin-bottom: 2rem;
+}
+
+.back-home-link {
+padding: 0.75rem 1.5rem;
+background-color: #0073e6;
+color: white;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 500;
+transition: background-color 0.3s ease;
+}
+
+.back-home-link:hover {
+background-color: #005bb5;
+}
