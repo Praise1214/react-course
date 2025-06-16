@@ -1,3 +1,10 @@
+import axios from 'axios';
+import { useState, useEffect, fragment } from 'react'
+import dayjs from 'dayjs';
+import { formatMoney } from '../utils/money';
+import { Header } from '../components/Header';
+import { Link } from 'react-router';
+import BuyAgainIcon from '../assets/images/icons/buy-again.png';
 import './OrderPage.css'
 import {Header} from '../components/Header'
 import { Link } from 'react-router'
@@ -8,23 +15,26 @@ export function OrderPage() {
 			<link rel="icon" type="image/svg+xml" href="orders-favicon.png" />
 			
 			<title>Orders</title>
-			<Header />
+			<Header cart={cart} />
 
 			<div className="orders-page">
 				<div className="page-title">Your Orders</div>
 
 				<div className="orders-grid">
-					<div className="order-container">
+
+					{orders.map((order) => {
+						return (
+							<div key={order.id} className="order-container">
 
 						<div className="order-header">
 							<div className="order-header-left-section">
 								<div className="order-date">
 									<div className="order-header-label">Order Placed:</div>
-									<div>August 12</div>
+											<div>{dayjs(order.orderTimeMs).format('MMMM D')}</div>
 								</div>
 								<div className="order-total">
 									<div className="order-header-label">Total:</div>
-									<div>$35.06</div>
+											<div>{formatMoney(order.totalCostCents)}</div>
 								</div>
 							</div>
 
