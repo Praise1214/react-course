@@ -5,7 +5,7 @@ import './ErrorPage.css'
 export function ErrorPage() {
     return (
         <>
-					<Header />
+					<Header/>
 
 					<div className="error-page">
 						<h1 className="error-code">404</h1>
