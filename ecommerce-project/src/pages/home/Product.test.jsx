@@ -31,7 +31,5 @@ describe ('Product component', () => {
     expect(
       screen.getByText('87')
     ).toBeInTheDocument()
-
-   
   })
 })
